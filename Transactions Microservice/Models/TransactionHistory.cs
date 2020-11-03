@@ -10,12 +10,11 @@ namespace Transactions_Microservice.Models
     {
         [Key]
         public int TransactionId { get; set; }
-        public int CounterpartiesId { get; set; }
         public int AccountId { get; set; }
         public int CustomerId { get; set; }
         public string message { get; set; }
-        public float source_balance { get; set; }
-        public float destination_balance { get; set; }
+        public int source_balance { get; set; }
+        public int destination_balance { get; set; }
         public DateTime DateOfTransaction { get; set; }
 
     }

@@ -9,6 +9,6 @@ namespace Transactions_Microservice.Repository
     public interface IRepository
     {
        void AddToTransactionHistory(TransactionHistory history);
-       void GetTransactionHistory(int CustomerId);
+       List<TransactionHistory> GetTransactionHistory(int CustomerId);
     }
 }

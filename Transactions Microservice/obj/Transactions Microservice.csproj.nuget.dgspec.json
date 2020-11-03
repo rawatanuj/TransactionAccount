@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anuj-PC\\source\\repos\\Transactions Microservice\\Transactions Microservice.csproj": {}
+    "C:\\Users\\Anuj-PC\\Desktop\\mfpe project\\Transactions Microservice\\Transactions Microservice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anuj-PC\\source\\repos\\Transactions Microservice\\Transactions Microservice.csproj": {
+    "C:\\Users\\Anuj-PC\\Desktop\\mfpe project\\Transactions Microservice\\Transactions Microservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anuj-PC\\source\\repos\\Transactions Microservice\\Transactions Microservice.csproj",
+        "projectUniqueName": "C:\\Users\\Anuj-PC\\Desktop\\mfpe project\\Transactions Microservice\\Transactions Microservice.csproj",
         "projectName": "Transactions Microservice",
-        "projectPath": "C:\\Users\\Anuj-PC\\source\\repos\\Transactions Microservice\\Transactions Microservice.csproj",
+        "projectPath": "C:\\Users\\Anuj-PC\\Desktop\\mfpe project\\Transactions Microservice\\Transactions Microservice.csproj",
         "packagesPath": "C:\\Users\\Anuj-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anuj-PC\\source\\repos\\Transactions Microservice\\obj\\",
+        "outputPath": "C:\\Users\\Anuj-PC\\Desktop\\mfpe project\\Transactions Microservice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anuj-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

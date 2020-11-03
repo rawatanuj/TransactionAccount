@@ -30,9 +30,9 @@ namespace Account_Microservice.Repository
             return new AccountCreationStatus() { Message = "Account has been successfully created", AccountId = a.AccountId };
         }
 
-        public TransactionStatus depositAccount(int AId, float amount)
+        public TransactionStatus depositAccount(int AId, int amount)
         {
-            float sbalance=0, dbalance=0;
+            int sbalance=0, dbalance=0;
             foreach(var item in accounts)
             {
                 if (item.AccountId == AId)
@@ -102,9 +102,9 @@ namespace Account_Microservice.Repository
             return li;
         }
 
-        public TransactionStatus withdrawAccount(int AId, float amount)
+        public TransactionStatus withdrawAccount(int AId, int amount)
         {
-            float sbalance = 0, dbalance = 0;
+            int sbalance = 0, dbalance = 0;
             foreach (var item in accounts)
             {
                 if (item.AccountId == AId)

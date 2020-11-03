@@ -294,23 +294,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vimal\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Anuj-PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vimal\\Desktop\\MFPE\\Account Microservice\\Account Microservice.csproj",
+      "projectUniqueName": "C:\\Users\\Anuj-PC\\Desktop\\mfpe project\\Account Microservice\\Account Microservice.csproj",
       "projectName": "Account Microservice",
-      "projectPath": "C:\\Users\\vimal\\Desktop\\MFPE\\Account Microservice\\Account Microservice.csproj",
-      "packagesPath": "C:\\Users\\vimal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vimal\\Desktop\\MFPE\\Account Microservice\\obj\\",
+      "projectPath": "C:\\Users\\Anuj-PC\\Desktop\\mfpe project\\Account Microservice\\Account Microservice.csproj",
+      "packagesPath": "C:\\Users\\Anuj-PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anuj-PC\\Desktop\\mfpe project\\Account Microservice\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\vimal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Anuj-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -361,7 +357,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

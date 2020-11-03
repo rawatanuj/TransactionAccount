@@ -11,7 +11,7 @@ namespace Transactions_Microservice.Helper
         public HttpClient AccountDetails()
         {
             var client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:53086");
+            client.BaseAddress = new Uri("https://localhost:44369");
             return client;
         }
 

@@ -9,7 +9,7 @@ namespace Transactions_Microservice.Models
     public class TransactionStatus
     {
         public string message { get; set; }
-        public float source_balance{ get; set; }
-        public float destination_balance { get; set; }
+        public int source_balance{ get; set; }
+        public int destination_balance { get; set; }
     }
 }

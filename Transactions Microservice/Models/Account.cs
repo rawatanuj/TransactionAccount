@@ -12,6 +12,6 @@ namespace Transactions_Microservice.Models
         public int AccountId { get; set; }
         public int CustomerId { get; set; }
         public string AccountType { get; set; }
-        public float Balance { get; set; }
+        public int Balance { get; set; }
     }
 }

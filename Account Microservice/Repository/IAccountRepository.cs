@@ -13,8 +13,8 @@ namespace Account_Microservice.Repository
         IEnumerable<Account> getAllAccounts(int CustomerId);
         Account getCustomerAccount(int AccountId);
       IEnumerable<Statement>  getStatement(int AccountId, DateTime from_date, DateTime to_date);
-       TransactionStatus depositAccount(int AccountId, float amount);
-        TransactionStatus withdrawAccount(int AccountId, float amount);
+       TransactionStatus depositAccount(int AccountId, int amount);
+        TransactionStatus withdrawAccount(int AccountId, int amount);
 
     }
 }

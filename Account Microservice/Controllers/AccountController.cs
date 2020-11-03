@@ -23,10 +23,10 @@ namespace Account_Microservice.Controllers
         }
 
         [HttpPost("createAccount")]
-        public AccountCreationStatus createAccount(int CustomerId,string AccountType)
+        public AccountCreationStatus createAccount([FromBody] dynamic model /*int CustomerId,string AccountType*/)
         {
             AccountCreationStatus acs = new AccountCreationStatus();
-            acs = _Repository.AddAccount(CustomerId, AccountType);
+            acs = _Repository.AddAccount(Convert.ToInt32(model.CustomerId), Convert.ToString(model.AccountType));
             return acs;
         }
 
@@ -84,27 +84,28 @@ namespace Account_Microservice.Controllers
         }
 
         [HttpPost("deposit")]
-        public TransactionStatus deposit(int AccountId, int amount)
+        public TransactionStatus deposit(/*int AccountId, int amount*/[FromBody] dynamic model)
         {
             TransactionStatus ts = new TransactionStatus();
-            ts = _Repository.depositAccount(AccountId, amount);
+            ts = _Repository.depositAccount(Convert.ToInt32(model.AccountID),Convert.ToInt32(model.Amount));
             return ts;
 
-           /* return new TransactionStatus()
+            /*return new TransactionStatus()
             {
                 Message = "users account has been credited",
-                source_balance = 1000,
-                destination_balance = 2000
-            };*/
+                source_balance = model.Amount,
+                destination_balance = model.AccountID
+            };
+            */
         }
 
 
         [HttpPost("withdraw")]
-        public TransactionStatus withdraw(int AccountId, int amount)
+        public TransactionStatus withdraw(/*int AccountId, int amount*/[FromBody] dynamic model)
         {
 
             TransactionStatus ts = new TransactionStatus();
-            ts = _Repository.withdrawAccount(AccountId, amount);
+            ts = _Repository.withdrawAccount(Convert.ToInt32(model.AccountID), Convert.ToInt32(model.Amount));
             return ts;
 
             /*return new TransactionStatus()
