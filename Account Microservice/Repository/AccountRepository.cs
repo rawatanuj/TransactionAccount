@@ -10,7 +10,7 @@ namespace Account_Microservice.Repository
 
     public class AccountRepository : IAccountRepository
     {
-        DateTime d=DateTime.Now;
+       public static DateTime d;
        public static int checkno= 78;
        public static int countac = 0;
         public static int countst = 0;
@@ -42,15 +42,15 @@ namespace Account_Microservice.Repository
                     dbalance = item.Balance;
 
                     Statement s = new Statement();
-                    countst++;
+                    countst=countst+1;
                     s.StatementId = countst;
                     s.AccountId = AId;
-                    d = d.AddDays(2);
+                    d = DateTime.Now;
                    s.date = d;
 
                     checkno += 50;
                     s.refno = Convert.ToString(checkno);
-                    s.ValueDate = d.AddDays(5);
+                    s.ValueDate = d;//d.AddDays(5);
                     s.Withdrawal = 0;
                     s.Deposit = amount;
                     s.ClosingBalance = dbalance;
@@ -91,14 +91,35 @@ namespace Account_Microservice.Repository
 
         public IEnumerable<Statement> getStatement(int AId, DateTime from_date, DateTime to_date)
         {
+            DateTime tempDate = Convert.ToDateTime("1/1/0001 12:00:00 AM");
             List<Statement> li = new List<Statement>();
-            foreach(var item in statements)
+            if (from_date==tempDate)
             {
-                if (item.AccountId == AId && item.date >= from_date && item.date <= to_date)
-                {
-                    li.Add(item);
-                }
+
+              
+                    DateTime f = DateTime.Now, t = DateTime.Now;
+                    f = f.AddMonths(-1);
+                    foreach (var item in statements)
+                    {
+                        if (item.AccountId == AId && item.date >= f && item.date <= t)
+                        {
+                            li.Add(item);
+                        }
+                    }
             }
+            else
+            {
+                foreach(var item in statements)
+                {
+                    if (item.AccountId == AId && item.date >= from_date && item.date <= to_date)
+                    {
+                        li.Add(item);
+                    }
+                }
+                
+            }
+           
+            
             return li;
         }
 
@@ -114,12 +135,14 @@ namespace Account_Microservice.Repository
                     dbalance = item.Balance;
 
                     Statement s = new Statement();
+                    countst=countst+1;
+                    s.StatementId = countst;
                     s.AccountId = AId;
-                    d = d.AddDays(2);
+                    d =DateTime.Now;
                     s.date = d;
-                    checkno += 50;
+                    checkno += 499;
                     s.refno = Convert.ToString(checkno);
-                    s.ValueDate = d.AddDays(5);
+                    s.ValueDate = d;//d.AddDays(5);
                     s.Withdrawal = amount;
                     s.Deposit = 0;
                     s.ClosingBalance = dbalance;

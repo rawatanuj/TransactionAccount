@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Account_Microservice.Provider;
 using Account_Microservice.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,6 +29,7 @@ namespace Account_Microservice
         {
             services.AddControllers().AddNewtonsoftJson();
             services.AddTransient<IAccountRepository, AccountRepository>();
+            services.AddTransient<IAccountProvider, AccountProvider>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,16 +1,22 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Jgqz3imN+iI+oxR4YHzyLe+SajtbvhaZv0KtZ0pJXfukg71xP93s+sJIZJBvknvsaueIeQTNNzEmT3k2ryrA+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Anuj-PC\\Desktop\\mfpe project\\Transactions Microservice\\Transactions Microservice.csproj",
+=======
+  "dgSpecHash": "t80HAoeOtPB0vw0S85roLVogRVIKerkpYdNv7n5k0fqSA8Afq9lebfn0kzEwcR/EGozq0ljR3TjGv83LNqSssA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vimal\\Desktop\\MFPE\\Transactions Microservice\\Transactions Microservice.csproj",
+>>>>>>> 4cd497735ec23e8e0a64cd2a7111c9b45adbbaf5
   "expectedPackageFiles": [
-    "C:\\Users\\Anuj-PC\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
-    "C:\\Users\\Anuj-PC\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.9\\microsoft.aspnetcore.jsonpatch.3.1.9.nupkg.sha512",
-    "C:\\Users\\Anuj-PC\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.9\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.9.nupkg.sha512",
-    "C:\\Users\\Anuj-PC\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Anuj-PC\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
-    "C:\\Users\\Anuj-PC\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\Anuj-PC\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    "C:\\Users\\vimal\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+    "C:\\Users\\vimal\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.9\\microsoft.aspnetcore.jsonpatch.3.1.9.nupkg.sha512",
+    "C:\\Users\\vimal\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.9\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.9.nupkg.sha512",
+    "C:\\Users\\vimal\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\vimal\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\vimal\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\vimal\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }
